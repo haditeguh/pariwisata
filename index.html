@@ -15,10 +15,18 @@
       @import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
     </style>
   </head>
-  <body class="alan-sans">
+  <body
+    class="alan-sans"
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="80"
+  >
     <header>
       <!-- Navbar -->
-      <nav class="navbar fixed-top bg-body-tertiary navbar-expand-md">
+      <nav
+        id="navbar"
+        class="navbar fixed-top bg-body-tertiary navbar-expand-md"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -27,7 +35,6 @@
               width="80"
               class="d-inline-block align-text-top"
             />
-            Explore Bali
           </a>
           <button
             class="navbar-toggler"
@@ -41,15 +48,35 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#banner"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#form">FORM</a>
+                <a class="nav-link" href="#event">Event</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#destinasi">Destinasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeri">Galeri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form">Pesan Tiket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimoni">Testimoni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#maps">Maps</a>
               </li>
             </ul>
           </div>
@@ -58,9 +85,9 @@
     </header>
     <main>
       <!-- BANNER -->
-      <section id="banner">
+      <section id="banner" class="pt-5">
         <div class="container-fluid px-0">
-          <div class="parallax-banner">
+          <div class="parallax parallax-banner">
             <div class="center-banner-text">
               <h1 class="myfg-dark text-center banner-text-properties">
                 <strong>EXPLORE BALI</strong>
@@ -70,7 +97,7 @@
               </h4>
               <div class="hero-buttons">
                 <a
-                  href="#about"
+                  href="#banner"
                   class="btn btn-primary mx-3 py-2 px-4 fs-5 rounded-pill"
                   >EXPLORE</a
                 >
@@ -81,95 +108,113 @@
       </section>
 
       <!-- EVENT MENDATANG -->
-      <section id="event" class="mt-5">
+      <section id="event" class="pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">EVENT MENDATANG</h1>
+          <h1 class="text-center fs-1 my-4">EVENT MENDATANG</h1>
         </div>
         <!-- Daftar Event -->
         <div class="container-fluid text-center">
           <div class="row">
             <div class="col">
               <img class="event-img" src="./assets/img/event4.png" alt="" />
-              <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
+              <h5>Music Fest 2025</h5>
+              <p>1-5 Januari 2025 at Pantai Kuta</p>
             </div>
             <div class="col">
               <img class="event-img" src="./assets/img/event2.png" alt="" />
-              <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
+              <h5>Kecak & Api Uluwatu</h5>
+              <p>15 Maret at Uluwatu, Bali</p>
             </div>
             <div class="col">
               <img class="event-img" src="./assets/img/event3.png" alt="" />
               <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
+              <p>3-7 Juni 2025 at Pantai Kuta</p>
             </div>
             <div class="col">
               <img class="event-img" src="./assets/img/event1.png" alt="" />
-              <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
+              <h5>Festival Layang</h5>
+              <p>10 November 2025 at Pantai Kuta</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- DAFTAR DESTINASI -->
-      <section id="destinasi" class="mt-5">
+      <section id="destinasi" class="pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">DAFTAR DESTINASI</h1>
+          <h1 class="text-center fs-1 my-4">DAFTAR DESTINASI</h1>
         </div>
         <!-- Daftar Destinasi -->
         <div class="container-fluid text-center">
           <div class="row">
-            <div class="col">
-              <img
-                class="event-img"
-                src="./assets/img/uluwatu_full.jpg"
-                alt=""
-              />
-              <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
-            </div>
-            <div class="col">
-              <img
-                class="destinasi-img"
-                src="./assets/img/ubud_full.jpg"
-                alt="ubud"
-              />
-              <h5>Surfing Competition 2025</h5>
-              <p>20-25 February 2025 at Kuta Beach, Bali</p>
-            </div>
-            <div class="col">
-              <a href="tanah_lot.html">
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card-destinasi">
                 <img
                   class="destinasi-img"
-                  src="./assets/img/tanah_lot_full.jpg"
+                  src="./assets/img/uluwatu.jpg"
+                  alt="uluwatu"
+                />
+                <h5 class="mt-3">Uluwatu</h5>
+                <p>Tebing megah, sunset, pura, ombak, eksotis.</p>
+                <a href="tanah_lot.html">
+                  <button type="button" class="btn btn-primary mb-3">
+                    Jelajahi
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card-destinasi">
+                <img
+                  class="destinasi-img"
+                  src="./assets/img/ubud.jpg"
+                  alt="ubud"
+                />
+                <h5 class="mt-3">Ubud</h5>
+                <p>Alam hijau, budaya, tenang, spiritual, artistik.</p>
+                <a href="tanah_lot.html">
+                  <button type="button" class="btn btn-primary mb-3">
+                    Jelajahi
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card-destinasi">
+                <img
+                  class="destinasi-img"
+                  src="./assets/img/tanah_lot.jpg"
                   alt="tanah_lot"
                 />
-              </a>
-              <h5>Tanah Lot</h5>
-              <p>Lambang daya tarik spiritual dan alam Bali</p>
+                <h5 class="mt-3">Tanah Lot</h5>
+                <p>Lambang daya tarik spiritual dan alam Bali</p>
+                <a href="tanah_lot.html">
+                  <button type="button" class="btn btn-primary mb-3">
+                    Jelajahi
+                  </button></a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- TENTANG -->
-      <section id="tentang" class="mt-5">
+      <section id="tentang" class="pt-5">
         <div class="container-fluid">
-          <div class="parallax-tentang">
-            <div class="about-content">
-              <h2>Welcome to Explore Bali</h2>
+          <div class="parallax parallax-tentang">
+            <div class="about-content text-black">
+              <h2>Explore Bali</h2>
               <p>
-                Explore Bali is your ultimate guide to discovering the
-                breathtaking beauty and rich culture of Bali Island. From
-                pristine beaches to majestic mountains, we provide you with all
-                the information you need to plan your perfect trip.
+                Explore Bali adalah panduan terbaik untuk menjelajahi keindahan
+                alam dan kekayaan budaya Pulau Bali. Dari pantai yang masih
+                alami hingga pegunungan yang megah, kami menyediakan semua
+                informasi yang Anda butuhkan untuk merencanakan perjalanan
+                sempurna Anda.
               </p>
               <p>
-                Whether you're an adventure seeker, a culture enthusiast, or
-                simply looking for a relaxing getaway, Explore Bali has
-                something for everyone. Join us as we explore the hidden gems
-                and popular attractions of this stunning island.
+                Bergabunglah bersama kami menjelajahi keindahan tersembunyi dan
+                destinasi populer di pulau menakjubkan ini.
               </p>
             </div>
           </div>
@@ -177,9 +222,9 @@
       </section>
 
       <!-- GALERI -->
-      <section id="galeri" class="mt-5">
+      <section id="galeri" class="pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">GALERI</h1>
+          <h1 class="text-center fs-1 my-4">GALERI</h1>
         </div>
         <div class="container-fluid">
           <div class="row text-center">
@@ -231,11 +276,11 @@
       </section>
 
       <!-- FORM -->
-      <section id="form" class="mt-5">
+      <section id="form" class="pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">FORM</h1>
+          <h1 class="text-center fs-1 my-4">Pesan Tiketmu</h1>
         </div>
-        <form class="container-fluid row">
+        <form class="container-fluid mx-auto row">
           <!-- left -->
           <!-- Nama -->
           <div class="container col-12 col-md-6">
@@ -270,30 +315,34 @@
                 placeholder="name@email.com"
               />
             </div>
-          </div>
-          <!-- Right -->
-          <div class="container col-12 col-md-6">
             <!-- Paket Wisata -->
             <div class="opsi-paket">
               <label for="pilih-paket" class="pb-2"
                 >Pilih Paket Wisata Anda:</label
               >
-              <select class="form-select" aria-label="Default">
+              <select
+                id="select-paket"
+                class="form-select"
+                aria-label="Default"
+              >
                 <option value="1">Paket 1</option>
                 <option value="2">Paket 2</option>
                 <option value="3">Paket 3</option>
               </select>
             </div>
+          </div>
+          <!-- Right -->
+          <div class="container col-12 col-md-6">
             <!-- Tanggal Wisata -->
             <div class="tanggal-wisata">
               <label class="pb-2" for="start-end-date"
                 >Tentukan Rentang Tanggal Wisata Anda:
               </label>
               <br />
-              <label for="start">Tanggal Mulai Wisata: </label>
+              <label for="start" class="mb-3">Tanggal Mulai Wisata: </label>
               <input type="date" id="start" name="trip-start" required />
               <br />
-              <label for="end">Tanggal Akhir Wisata:</label>
+              <label for="end" class="mb-3">Tanggal Akhir Wisata:</label>
               <input type="date" id="end" name="trip-end" required />
             </div>
             <!-- Catatan -->
@@ -304,29 +353,68 @@
               <textarea
                 class="form-control"
                 id="textarea-form"
-                rows="4"
-                placeholder="misal: saya ingin bawa kasur sendiri dari rumah, saya alergi stellllaa jeruk, saya ingin trip naik ferrari roma"
+                rows="7"
+                placeholder="tambahkan catatan"
               ></textarea>
             </div>
           </div>
         </form>
+        <div class="btn btn-primary my-3 mx-4">
+          <a
+            href="#submitModal"
+            class="text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#submitModal"
+            >Pesan Sekarang</a
+          >
+        </div>
       </section>
 
+      <!--Modal Section-->
+      <div class="modal fade" id="submitModal" tabindex="-1" inert>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Notifikasi</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Tanggal Reservasi Kamu Sedang Diproses.</p>
+              <p>Kami akan segera follow up kamu via email.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- TESTIMONI -->
-      <section id="testimoni">
+      <section id="testimoni" class="mx-auto pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">TESTIMONI</h1>
+          <h1 class="text-center fs-1 my-4">TESTIMONI</h1>
         </div>
         <div
           id="testimonialCarousel"
-          class="carousel carousel-dark slide mt-5"
+          class="carousel carousel-dark slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner text-center p-4">
+          <div class="carousel-inner text-center">
             <!-- Testimoni 1 -->
             <div class="carousel-item active">
               <blockquote class="blockquote">
-                <p class="mb-4">
+                <p>
                   “Perjalanan ke Bali benar-benar tak terlupakan! Semua
                   terorganisir dengan rapi, dari transportasi hingga akomodasi.”
                 </p>
@@ -337,9 +425,9 @@
             <!-- Testimoni 2 -->
             <div class="carousel-item">
               <blockquote class="blockquote">
-                <p class="mb-4">
+                <p>
                   “Guide sangat ramah, selalu menjelaskan budaya lokal dan
-                  mengantar kami ke spot foto terbaik. Recommended!”
+                  mengantar kami ke spot foto terbaik. sangat Recommended!”
                 </p>
                 <footer class="blockquote-footer">Maya, Surabaya</footer>
               </blockquote>
@@ -348,9 +436,9 @@
             <!-- Testimoni 3 -->
             <div class="carousel-item">
               <blockquote class="blockquote">
-                <p class="mb-4">
+                <p>
                   “Snorkeling di Gili Trawangan luar biasa! Semua diatur tanpa
-                  repot, saya bisa menikmati liburan sepenuhnya.”
+                  repot, saya bisa menikmati liburan di Bali sepenuhnya.”
                 </p>
                 <footer class="blockquote-footer">Rizal, Bandung</footer>
               </blockquote>
@@ -380,9 +468,9 @@
       </section>
 
       <!-- FAQ -->
-      <section id="faq">
+      <section id="faq" class="d-block mx-auto pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">F.A.Q.</h1>
+          <h1 class="text-center fs-1 my-4">F.A.Q.</h1>
         </div>
         <div class="accordion" id="accordion-faq">
           <div class="accordion-item">
@@ -395,7 +483,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Accordion Item #1
+                Kapan bulan terbaik untuk berwisata ke Pulau Bali?
               </button>
             </h2>
             <div
@@ -405,15 +493,8 @@
               data-bs-parent="#accordion-faq"
             >
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Mei, Juni, September adalah bulan-bulan terbaik untuk
+                mengunjungi Bali.
               </div>
             </div>
           </div>
@@ -427,7 +508,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Accordion Item #2
+                Apa saja destinasi terbaik untuk dikunjungi di Pulau Bali?
               </button>
             </h2>
             <div
@@ -437,15 +518,8 @@
               data-bs-parent="#accordion-faq"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Pilihan tujuan wisata yang menarik untuk dikunjungi di Pulau
+                Bali diantaranya adalah Tanah Lot, Ubud, dan Uluwatu.
               </div>
             </div>
           </div>
@@ -459,7 +533,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+                Seperti apa kehidupan malam di Bali?
               </button>
             </h2>
             <div
@@ -469,26 +543,20 @@
               data-bs-parent="#accordion-faq"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Destinasi yang bisa dipertimbangkan untuk mengunjungi wisata
+                malam di Bali adalah Kuta dan Canggu. Disana banyak tempat club
+                malam yang selalu ramai akan turis lokal dan mancanegara.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="maps">
+      <section id="maps" class="pt-5">
         <div class="container-fluid">
-          <h1 class="text-center fs-1">MAPS</h1>
+          <h1 class="text-center fs-1 my-4">MAPS</h1>
         </div>
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center mb-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505145.6949744661!2d115.07157704999999!3d-8.4554714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali!5e0!3m2!1sid!2sid!4v1759380235627!5m2!1sid!2sid"
             allowfullscreen=""
@@ -506,59 +574,67 @@
         <div class="container p-4 pb-0">
           <section>
             <div class="row">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Pulau Bali</h6>
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto text-center mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Bali Island
+                </h6>
                 <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                  Pulau tropis nan eksotis dengan budaya, pantai, dan keindahan
+                  spiritual.
                 </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-center mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Navigasi</h6>
-                <p>
-                  <a class="text-white">MDBootstrap</a>
+                <p class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
                 </p>
-                <p>
-                  <a class="text-white">MDWordPress</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="#event">Event</a>
                 </p>
-                <p>
-                  <a class="text-white">BrandFlow</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="#destinasi">Destinasi</a>
                 </p>
-                <p>
-                  <a class="text-white">Bootstrap Angular</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="#tentang">Tentang</a>
+                </p>
+                <p class="nav-item">
+                  <a class="nav-link" href="#form">Pesan Tiket</a>
                 </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-center mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Destinasi</h6>
-                <p>
-                  <a class="text-white">Your Account</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="tanah_lot.html">Tanah Lot</a>
                 </p>
-                <p>
-                  <a class="text-white">Become an Affiliate</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="#tentang">Ubud</a>
                 </p>
-                <p>
-                  <a class="text-white">Shipping Rates</a>
-                </p>
-                <p>
-                  <a class="text-white">Help</a>
+                <p class="nav-item">
+                  <a class="nav-link" href="#form">Uluwatu</a>
                 </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto text-center mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Kontak</h6>
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                <p>
+                  <a class="text-white">instagram</a>
+                </p>
+                <p>
+                  <a class="text-white">whatsapp</a>
+                </p>
+                <p>
+                  <a class="text-white">email</a>
+                </p>
               </div>
             </div>
           </section>
@@ -568,9 +644,9 @@
           <section class="p-3 pt-0">
             <div class="text-center">
               <div class="p-3">
-                © 2020 Copyright:
+                © 2025 Copyright:
                 <a class="text-white" href="https://mdbootstrap.com/"
-                  >MDBootstrap.com</a
+                  >Explore Bali</a
                 >
               </div>
             </div>
@@ -583,5 +659,23 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Auto collapse navbar on link click
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarCollapse = document.getElementById("navbarNavDropdown");
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (navbarCollapse.classList.contains("show")) {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false,
+              });
+              bsCollapse.hide();
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
